@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --trans-white:  hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+body{
+    background-color: var(--light-gray);
+}
+h1{
+    color: var(--light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+}
+
+header{
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: var(--very-dark-cyan);
+    height: 50px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 16px;
+    background-color: white;
+    margin-top: 20px;
+    border: 0.5px solid var(--dark-cyan);
+    border-radius: 25px;
+
+}
+
+
+.wrapper{
+    width: 100%;
+    height:auto;
+    margin: 0 auto ; 
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+    
+}
+
+.plans{
+    width: 350px;
+    height: 500px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.plan-info{
+    width: 180px;
+    color: var(--trans-white);
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.sedans{
+    background-color: var(--bright-orange);
+}
+.suvs{
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+.learn{
+    padding: 16px 40px;
+    border-radius: 25px;
+    background-color: var(--light-gray);
+    border: none;
+    margin-top: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.learn:active{
+    border-color: var(--trans-white);
+    color: var(--trans-white);
+    border: 2px solid var(--trans-white);
+}
+.plan-dets{
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.one{
+    color: var(--bright-orange);
+}
+.two{
+    color: var(--dark-cyan);
+}
+.three{
+    color: var(--very-dark-cyan);
+}
+.one:active{
+    background-color: var(--bright-orange);
+    color: var(--trans-white);
+}
+.two:active{
+    background-color: var(--dark-cyan);
+}
+.three:active{
+    background-color: var(--very-dark-cyan)
+}
+@media screen and (max-width: 375px) {
+    .plans{
+        width: 90%;
+
+    }
+
+}
